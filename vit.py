@@ -8,10 +8,10 @@ app = Flask(__name__)
 app.secret_key = 'some secret key'
 app.config['PERMANENT_SESSION_LIFETIME'] =  timedelta(minutes=2)
 #config MySQL
-app.config['MYSQL_HOST']='us-cdbr-iron-east-01.cleardb.net'
-app.config['MYSQL_USER']='bbeb7fca92037a'
-app.config['MYSQL_PASSWORD']='1d793178'
-app.config['MYSQL_DB']='heroku_aeecfbfb1c87e61'
+app.config['MYSQL_HOST']='xxxxxxxxxxxxxxxxxxxxxxx'
+app.config['MYSQL_USER']='xxxxxxxxxxxxxxxxxxxx'
+app.config['MYSQL_PASSWORD']='xxxxxxxxxxxxxxxxxxxxxxxxxx'
+app.config['MYSQL_DB']='xxxxxxxxxxxxxxxxxxxxxxxxxx'
 app.config['MYSQL_CURSORCLASS']='DictCursor'
 #initialize MySQL
 mysql = MySQL(app)
@@ -92,7 +92,7 @@ def login():
 		#Getting form fields
 		login_id = request.form['login_id']
 		password_candidate = request.form['password']
-		if login_id == 'Vamsi@Pratyu' and password_candidate == 'Vit-stuff@9294_':
+		if login_id == 'xxxxxxxxxxxxxxxxxxx' and password_candidate == 'xxxxxxxxxxx':
 			session['logged_in'] = True
 			session['login_id'] = login_id
 			cur = mysql.connection.cursor()
